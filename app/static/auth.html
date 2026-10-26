@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e35"><meta name="robots" content="noindex">
+  <title>Your workspace awaits — Postmark</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css"><link rel="stylesheet" href="/static/landing.css">
+  <script src="/static/auth.js" defer></script>
+</head>
+<body class="auth-page" data-auth-page="auth">
+  <div class="auth-story">
+    <a class="brand" href="/" aria-label="Postmark home"><span class="brand-symbol"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 6h18L12 22l-2-9-5-7Z" fill="currentColor"/><path d="m10 13 13-7" stroke="#173e35" stroke-width="1.6"/></svg></span>postmark<span class="brand-period">.</span></a>
+    <div class="auth-story-content"><span class="landing-eyebrow"><span class="live-dot"></span>A LITTLE CLARITY GOES A LONG WAY</span><h1>Your inbox. <br>Your peace <br>of <em>mind.</em></h1><p>A private space to take a closer look at the emails that make you pause.</p><div class="auth-benefit"><span>✓</span>Understand the signals behind every result.</div><div class="auth-benefit"><span>✓</span>Keep your analysis history in one place.</div><div class="auth-benefit"><span>✓</span>Your findings belong to your account.</div></div>
+    <div class="auth-story-footer"><span class="mini-envelope" aria-hidden="true">↗</span><span>Less guesswork. More confidence.</span></div>
+    <div class="auth-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+  <main class="auth-main">
+    <a class="auth-back" href="/">← Back to Postmark</a>
+    <div class="auth-card-wrap"><div class="auth-card-label"><span class="live-dot"></span> YOUR PRIVATE WORKSPACE</div><div id="auth-loading" class="auth-component-loading" role="status"><div class="loading-orbit"></div><h2>Making a little room for you.</h2><p>Loading secure sign-in…</p></div><div id="clerk-auth"></div><div id="auth-error" class="auth-component-error" role="alert" hidden><h2>Let’s try that again.</h2><p data-auth-error-message></p><button class="button button-primary" onclick="location.reload()">Reload sign-in</button></div><p class="auth-privacy">Your emails and reports are visible only to your account.<br>Secure sign-in, powered by Clerk.</p></div>
+    <footer class="auth-main-footer">A more thoughtful inbox starts here.</footer>
+  </main>
+</body>
+</html>
