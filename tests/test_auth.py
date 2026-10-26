@@ -80,8 +80,9 @@ def test_rejects_wrong_signature(client, jwt_session):
     assert response.status_code == 401
 
 
+@pytest.mark.usefixtures("jwt_session")
 def test_rejects_unsigned_or_malformed_tokens(client):
-    app.dependency_overrides.pop(current_user)
+    # Configure a mock Clerk instance instead of relying on a developer's .env.
     unsigned = jwt.encode({"sub": "user_fake"}, key="", algorithm="none")
     for token in [unsigned, "not-a-jwt"]:
         assert client.get("/api/me", headers={"Authorization": "Bearer " + token}).status_code == 401
